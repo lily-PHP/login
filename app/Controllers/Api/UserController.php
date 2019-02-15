@@ -41,8 +41,9 @@ class UserController
     public function loginOk()
     {
         $data = $this -> fbController -> fbCallback();
+        return $data; die; 
 
-        $user = $data['userInfo']; 
+        $user = $data['userInfo'];
 
         $user_data['fb_access_token'] = $data['token'];
         $user_data['fb_id'] = $user -> getId();
