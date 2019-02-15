@@ -40,7 +40,7 @@ class UserController
      */
     public function loginOk()
     {
-        $helper = $this ->fbController -> getRedirectLoginHelper();
+        $helper = $this ->fbController ->fb -> getRedirectLoginHelper();
         //获取token
         try {
             $accessToken = $helper->getAccessToken();
