@@ -28,6 +28,7 @@ class UserController
      */
     public function getLoginUrl()
     {
+        session_start();
 //        return 'ok';
         $url = $this -> fbController ->loginUrl('https://login.lhydejia.site/user/loginok');
         return view('index/login', ['url' => $url]);
@@ -40,8 +41,9 @@ class UserController
      */
     public function loginOk()
     {
+        session_start();
         $data = $this -> fbController -> fbCallback();
-        return $data; die; 
+        return $data; die;
 
         $user = $data['userInfo'];
 
