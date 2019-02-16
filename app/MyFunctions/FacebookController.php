@@ -11,8 +11,8 @@ use \Facebook\Facebook;
  */
 class FacebookController
 {
-    private $appID = '562622214203764';
-    private $appSecret = 'fe229c29e799664e6d72c105f5c3f77c';
+    private $appID = '1215046988660308';
+    private $appSecret = '19417d8273ca23674a8535fc5900402e';
     private $version = 'v2.10';
     public $fb = null;
 
@@ -25,9 +25,9 @@ class FacebookController
     {
 //        require_once __DIR__ . 'vendor/autoload.php';
         $this -> fb = new \Facebook\Facebook([
-            'app_id' => '562622214203764',
-            'app_secret' => 'fe229c29e799664e6d72c105f5c3f77c',
-            'default_graph_version' => 'v2.10',
+            'app_id' => $this -> appID,
+            'app_secret' => $this -> appSecret,
+            'default_graph_version' => $this -> version,
         ]);
     }
 
