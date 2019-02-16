@@ -29,12 +29,11 @@ class UserController
     public function getLoginUrl()
     {
         session_start();
-//        return 'ok';
 //        $url = $this -> fbController ->loginUrl('https://abcd.lhydejia.site:8082/user/loginok');
-        $url = $this -> fbController ->loginUrl('https://login.lhydejia.site/user/loginok');
+//        $url = $this -> fbController ->loginUrl('https://login.lhydejia.site/user/loginok');
+        $url = $this -> fbController ->loginUrl('https://www.srilankashop.top/user/loginok');
         return view('index/login', ['url' => $url]);
 //        return $url;
-//        return '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
     }
 
     /**
@@ -44,7 +43,7 @@ class UserController
     {
         session_start();
         $data = $this -> fbController -> fbCallback();
-        return $data; die;
+        return $data;
 
         /*$user = $data['userInfo'];
 
