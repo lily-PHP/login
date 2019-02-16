@@ -48,7 +48,7 @@ class FacebookController
         //获取token
         try {
             $accessToken = $helper->getAccessToken();
-            return $accessToken; 
+//            return $accessToken;
         } catch(\Facebook\Exceptions\FacebookResponseException $e) {
             // When Graph returns an error
             return 'Graph returned an error: ' . $e->getMessage();
@@ -61,7 +61,7 @@ class FacebookController
             exit;
         }
 
-        /*//验证token
+        //验证token
         if (! isset($accessToken)) {
             if ($helper->getError()) {
                 header('HTTP/1.0 401 Unauthorized');
@@ -121,7 +121,7 @@ class FacebookController
         }
 
         $data = ['token' => $access_token_value, 'userInfo' => $user, 'get' => $get];
-        return $data;*/
+        return $data;
     }
 
 
