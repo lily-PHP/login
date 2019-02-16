@@ -13,6 +13,7 @@ use Swoft\Core\Application;
 use Swoft\Http\Message\Server\Request;
 use \Swoft\Bean\Annotation\Value;
 use \Facebook\Facebook;
+use GuzzleHttp\Client;
 
 /**
  * Class UserController
