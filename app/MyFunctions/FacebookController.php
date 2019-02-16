@@ -57,7 +57,7 @@ class FacebookController
             exit;
         }
 
-        //验证token
+        /*//验证token
         if (! isset($accessToken)) {
             if ($helper->getError()) {
                 header('HTTP/1.0 401 Unauthorized');
@@ -117,7 +117,7 @@ class FacebookController
         }
 
         $data = ['token' => $access_token_value, 'userInfo' => $user, 'get' => $get];
-        return $data;
+        return $data;*/
     }
 
 
