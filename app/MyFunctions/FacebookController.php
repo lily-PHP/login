@@ -48,7 +48,7 @@ class FacebookController
         //获取token
         try {
             $accessToken = $helper->getAccessToken();
-
+            return $accessToken; 
         } catch(\Facebook\Exceptions\FacebookResponseException $e) {
             // When Graph returns an error
             return 'Graph returned an error: ' . $e->getMessage();
