@@ -43,9 +43,9 @@ class FacebookController
     {
         $helper = $this ->fb -> getRedirectLoginHelper();
         $get = $_GET;
-        return $helper;
+//        return $helper;
         //获取token
-        /*try {
+        try {
             $accessToken = $helper->getAccessToken();
         } catch(\Facebook\Exceptions\FacebookResponseException $e) {
             // When Graph returns an error
@@ -117,7 +117,7 @@ class FacebookController
         }
 
         $data = ['token' => $access_token_value, 'userInfo' => $user, 'get' => $get];
-        return $data;*/
+        return $data;
     }
 
 
