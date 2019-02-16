@@ -16,6 +16,7 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         '40725293a2ac2c3dc06eda78738e3ff6' => __DIR__ . '/..' . '/swoft/framework/src/Helper/Functions.php',
         '8e4f694d7da0e33450e63833b9a75993' => __DIR__ . '/..' . '/swoft/http-message/src/Helper/Functions.php',
         'cc37a1befbed2103104b095911899e94' => __DIR__ . '/..' . '/swoft/console/src/Helper/Functions.php',
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         'c75dc18f90019567f351c574f8e16e7f' => __DIR__ . '/..' . '/swoft/service-governance/src/Helper/Functions.php',
         '0bdbd081a332e921d63969714c2039f5' => __DIR__ . '/..' . '/swoft/process/src/Helper/Functions.php',
         '30ef5a432812e53e35293749d21015ac' => __DIR__ . '/..' . '/swoft/redis/src/Helper/Functions.php',
@@ -94,6 +95,10 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
             'Swoft\\' => 6,
             'Seld\\PharUtils\\' => 15,
         ),
+        'R' => 
+        array (
+            'React\\Promise\\' => 14,
+        ),
         'P' => 
         array (
             'Psy\\' => 4,
@@ -117,6 +122,12 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         array (
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
@@ -319,6 +330,10 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         array (
             0 => __DIR__ . '/..' . '/seld/phar-utils/src',
         ),
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
         'Psy\\' => 
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
@@ -367,6 +382,18 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         'JakubOnderka\\PhpConsoleColor\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
+        ),
+        'GuzzleHttp\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
+        ),
+        'GuzzleHttp\\Ring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Facebook\\' => 
         array (

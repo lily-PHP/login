@@ -15,6 +15,7 @@ return array(
     '40725293a2ac2c3dc06eda78738e3ff6' => $vendorDir . '/swoft/framework/src/Helper/Functions.php',
     '8e4f694d7da0e33450e63833b9a75993' => $vendorDir . '/swoft/http-message/src/Helper/Functions.php',
     'cc37a1befbed2103104b095911899e94' => $vendorDir . '/swoft/console/src/Helper/Functions.php',
+    'ad155f8f1cf0d418fe49e248db8c661b' => $vendorDir . '/react/promise/src/functions_include.php',
     'c75dc18f90019567f351c574f8e16e7f' => $vendorDir . '/swoft/service-governance/src/Helper/Functions.php',
     '0bdbd081a332e921d63969714c2039f5' => $vendorDir . '/swoft/process/src/Helper/Functions.php',
     '30ef5a432812e53e35293749d21015ac' => $vendorDir . '/swoft/redis/src/Helper/Functions.php',
