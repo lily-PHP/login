@@ -43,11 +43,12 @@ class FacebookController
     {
         $helper = $this ->fb -> getRedirectLoginHelper();
         $get = $_GET;
-        return 2333;
+
 //        return $helper;
         //获取token
         try {
             $accessToken = $helper->getAccessToken();
+            return 12333;
         } catch(\Facebook\Exceptions\FacebookResponseException $e) {
             // When Graph returns an error
             return 'Graph returned an error: ' . $e->getMessage();
