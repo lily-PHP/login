@@ -48,14 +48,16 @@ class FacebookController
         //获取token
         try {
             $accessToken = $helper->getAccessToken();
-            return 12333;
+
         } catch(\Facebook\Exceptions\FacebookResponseException $e) {
             // When Graph returns an error
             return 'Graph returned an error: ' . $e->getMessage();
+            return 22333;
             exit;
         } catch(\Facebook\Exceptions\FacebookSDKException $e) {
             // When validation fails or other local issues
             return 'Facebook SDK returned an error: ' . $e->getMessage();
+            return 32333;
             exit;
         }
 
