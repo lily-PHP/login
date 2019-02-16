@@ -41,7 +41,8 @@ class UserController
      */
     public function loginOk()
     {
-        return ok; 
+        $get = $_GET;
+        return $get;
 //        session_start();
 //        $data = $this -> fbController -> fbCallback();
 //        return $data; die;
