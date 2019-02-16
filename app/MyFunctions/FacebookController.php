@@ -43,6 +43,7 @@ class FacebookController
     {
         $helper = $this ->fb -> getRedirectLoginHelper();
         $get = $_GET;
+        return 2333;
 //        return $helper;
         //获取token
         try {
