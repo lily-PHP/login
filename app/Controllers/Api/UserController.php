@@ -30,7 +30,8 @@ class UserController
     {
         session_start();
 //        return 'ok';
-        $url = $this -> fbController ->loginUrl('https://login.lhydejia.site/user/loginok');
+        $url = $this -> fbController ->loginUrl('https://abcd.lhydejia.site:8082/user/loginok');
+//        $url = $this -> fbController ->loginUrl('https://login.lhydejia.site/user/loginok');
         return view('index/login', ['url' => $url]);
 //        return $url;
 //        return '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
