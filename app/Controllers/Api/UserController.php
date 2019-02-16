@@ -45,7 +45,7 @@ class UserController
         $data = $this -> fbController -> fbCallback();
         return $data; die;
 
-        $user = $data['userInfo'];
+        /*$user = $data['userInfo'];
 
         $user_data['fb_access_token'] = $data['token'];
         $user_data['fb_id'] = $user -> getId();
@@ -57,7 +57,7 @@ class UserController
 
 //        echo "<pre/>";
 //        var_dump($user_data);
-        return $user_data;
+        return $user_data;*/
         //已获取用户信息， 可header跳转至 xx页面
 
     }
