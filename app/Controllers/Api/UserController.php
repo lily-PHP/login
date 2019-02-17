@@ -62,7 +62,7 @@ class UserController
     {
         $facebookConfig = $this -> fbConfig;
 //        $facebookConfig['http_client_handler'] = 'guzzle';
-        $client = new Client();
+        $client = new \GuzzleHttp\Client();
         $facebookConfig['http_client_handler'] = $client;
 
         $fb = new Facebook($facebookConfig);
