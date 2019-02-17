@@ -61,7 +61,8 @@ class UserController
     public function loginOk()
     {
         $facebookConfig = $this -> fbConfig;
-        $facebookConfig['http_client_handler'] = 'guzzle';
+//        $facebookConfig['http_client_handler'] = 'guzzle';
+        $facebookConfig['http_client_handler'] = 'stream';
 
         $fb = new Facebook($facebookConfig);
         $helper = $fb->getRedirectLoginHelper();
