@@ -23,7 +23,7 @@
  */
 namespace Facebook\HttpClients;
 
-use GuzzleHttp\Client;
+use \GuzzleHttp\Client;
 use InvalidArgumentException;
 use Exception;
 
@@ -65,7 +65,7 @@ class HttpClientsFactory
             return new FacebookCurlHttpClient();
         }
 
-        if ('guzzle' === $handler && !class_exists('GuzzleHttp\Client')) {
+        if ('guzzle' === $handler && !class_exists('\GuzzleHttp\Client')) {
             throw new Exception('The Guzzle HTTP client must be included in order to use the "guzzle" handler.');
         }
 
