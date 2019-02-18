@@ -60,6 +60,8 @@ class UserController
      */
     public function loginOk()
     {
+        $path = \Swoft::getAlias('@vendor');
+        require_once $path.'\autoload.php';
         $facebookConfig = $this -> fbConfig;
 //        $facebookConfig['http_client_handler'] = 'guzzle';
         $client = new \GuzzleHttp\Client();
