@@ -270,3 +270,4 @@ EOF
 [2019-02-16 19:13:57 #31308.1]	TRACE	swTimer_select(:222): id=1, exec_msec=82000, round=0, exist=0
 [2019-02-18 10:39:05 *14980.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: require_once(): Failed opening required '/home/wwwroot/abcd.lhydejia.site/login/vendor\autoload.php' (include_path='/home/wwwroot/abcd.lhydejia.site/login/vendor/phpseclib/phpseclib/phpseclib:.:/usr/local/php/lib/php') in /home/wwwroot/abcd.lhydejia.site/login/app/Controllers/Api/UserController.php on line 64.
 [2019-02-18 10:39:05 $14964.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2019-02-18 22:51:39 #25820.1]	NOTICE	Server is shutdown now.
