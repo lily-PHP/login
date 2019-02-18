@@ -48,7 +48,7 @@
 
     // Save user data to the database
     function saveUserData(userData){
-        $.post('userData.php', {oauth_provider:'facebook',userData: JSON.stringify(userData)}, function(data){ return true; });
+        $.post('/user/saveuser', {oauth_provider:'facebook',userData: JSON.stringify(userData)}, function(data){ return true; });
     }
 
     // Fetch the user profile data from facebook

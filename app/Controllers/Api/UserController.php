@@ -168,4 +168,12 @@ class UserController
         return view('index/fbindex');
     }
 
+    /**
+     * @RequestMapping(route="saveuser")
+     */
+    public function saveUserData()
+    {
+        return 'to be save mysql';
+    }
+
 }
