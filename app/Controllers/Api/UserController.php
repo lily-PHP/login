@@ -160,4 +160,12 @@ class UserController
 
     }
 
+    /**
+     * @RequestMapping(route="fbindex")
+     */
+    public function fbIndex()
+    {
+        return view('index/fbindex');
+    }
+
 }
