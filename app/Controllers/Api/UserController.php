@@ -63,9 +63,9 @@ class UserController
         $path = \Swoft::getAlias('@vendor');
         require_once $path.'/autoload.php';
         $facebookConfig = $this -> fbConfig;
-//        $facebookConfig['http_client_handler'] = 'guzzle';
-        $client = new \GuzzleHttp\Client();
-        $facebookConfig['http_client_handler'] = $client;
+        $facebookConfig['http_client_handler'] = 'guzzle';
+//        $client = new \GuzzleHttp\Client();
+//        $facebookConfig['http_client_handler'] = $client;
 
         $fb = new Facebook($facebookConfig);
         $helper = $fb->getRedirectLoginHelper();
