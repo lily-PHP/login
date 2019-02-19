@@ -58,7 +58,7 @@ class UserController
     /**
      * @RequestMapping(route="loginok")
      */
-    public function loginOk()
+    public function loginOk(Request $request)
     {
         $path = \Swoft::getAlias('@vendor');
         require_once $path.'/autoload.php';
@@ -67,6 +67,8 @@ class UserController
 //        $client = new \GuzzleHttp\Client();
 //        $facebookConfig['http_client_handler'] = $client;
 
+        $url = $request -> getUri();
+        return $url; 
         $fb = new Facebook($facebookConfig);
         $helper = $fb->getRedirectLoginHelper();
         if(isset($_GET['state'])){
