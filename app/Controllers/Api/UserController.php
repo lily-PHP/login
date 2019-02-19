@@ -41,9 +41,9 @@ class UserController
      */
     public function getLoginUrl(Request $request)
     {
-        $url = $request -> getUri();
-        var_dump($url); die; 
-        return $url -> getHost();
+//        $url = $request -> getUri();
+//        var_dump($url); die;
+//        return $url -> getHost();
 
         $facebookConfig = $this -> fbConfig;
         $url = $this -> url;
@@ -169,8 +169,10 @@ class UserController
     /**
      * @RequestMapping(route="fbindex")
      */
-    public function fbIndex()
+    public function fbIndex(Request $request)
     {
+        $url = $request -> getUri();
+        return $url;
         return view('index/fbindex');
     }
 
