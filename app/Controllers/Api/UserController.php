@@ -39,8 +39,11 @@ class UserController
     /**
      * @RequestMapping(route="login")
      */
-    public function getLoginUrl()
+    public function getLoginUrl(Request $request)
     {
+        $url = $request -> getUri();
+        return $url;
+
         $facebookConfig = $this -> fbConfig;
         $url = $this -> url;
         $fb = new Facebook($facebookConfig);
@@ -68,7 +71,7 @@ class UserController
 //        $facebookConfig['http_client_handler'] = $client;
 
         $url = $request -> getUri();
-        return $url; 
+        return $url;
         $fb = new Facebook($facebookConfig);
         $helper = $fb->getRedirectLoginHelper();
         if(isset($_GET['state'])){
