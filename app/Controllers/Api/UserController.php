@@ -42,7 +42,7 @@ class UserController
     public function getLoginUrl(Request $request)
     {
         $url = $request -> getUri();
-        return $url;
+        return $url -> getHost();
 
         $facebookConfig = $this -> fbConfig;
         $url = $this -> url;
