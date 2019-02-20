@@ -171,8 +171,12 @@ class UserController
      */
     public function fbIndex(Request $request)
     {
-        $url = $request -> getUri();
-        return $url;
+        session_start();
+        $_SESSION['test'] = '1234';
+        return $_SESSION;
+
+//        $url = $request -> getUri();
+//        return $url;
         return view('index/fbindex');
     }
 
