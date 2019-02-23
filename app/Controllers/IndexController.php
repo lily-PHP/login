@@ -14,10 +14,6 @@ use App\Middlewares\InterfaceMiddleware;
 /**
  * Class IndexController
  * @Controller()
- * @Middlewares({
- *     @Middleware(BaseMiddleware::class),
- *     @Middleware(InterfaceMiddleware::class)
- * })
  */
 class IndexController
 {

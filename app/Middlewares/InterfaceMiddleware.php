@@ -24,6 +24,7 @@ class InterfaceMiddleware implements MiddlewareInterface
         $path = $request->getPath();
         if(session()->getId() && (!session()->get('uid') || session()->get('uid') == 1)){
             // 验证当前请求是否需要登录
+            return response()->withStatus(200)->withAddedHeader('ResponseCode', false);
         }
         $response = $handler->handle($request);
         $response = $response->withAddedHeader('InterfaceMiddleware', $path);

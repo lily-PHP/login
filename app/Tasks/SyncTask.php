@@ -171,21 +171,21 @@ class SyncTask
      *
      * @Scheduled(cron="*\/10 * * * * *")
      */
-    public function cronTask()
-    {
-        (new syncIndexCache())->demo1();
-        echo date("Y-m-d H:i:s", time()). "sync Task每一秒执行一次  \n";
-        return 'cronTask';
-    }
-
-    /**
-     * 每分钟第3-5秒执行
-     *
-     * @ Scheduled(cron="3-5 * * * * *")
-     */
-    public function cronooTask()
-    {
-        echo time() . "第3-5秒执行\n";
-        return 'cronooTask';
-    }
+//    public function cronTask()
+//    {
+////        (new syncIndexCache())->demo1();
+//        echo date("Y-m-d H:i:s", time()). "sync Task每一秒执行一次  \n";
+//        return 'cronTask';
+//    }
+//
+//    /**
+//     * 每分钟第3-5秒执行
+//     *
+//     * @ Scheduled(cron="3-5 * * * * *")
+//     */
+//    public function cronooTask()
+//    {
+//        echo time() . "第3-5秒执行\n";
+//        return 'cronooTask';
+//    }
 }

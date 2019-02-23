@@ -8,10 +8,11 @@
  */
 
 return [
+    //DB_URI=10.10.30.202:3306/zhshop_mall?user=root&password=x7l0Nyr0lTczl4Ta&charset=utf8,10.10.30.202:3306/test?user=root&password=x7l0Nyr0lTczl4Ta&charset=utf8
     'master' => [
         'name'        => 'master',
         'uri'         => [
-            '119.27.185.189:3306/lily?user=root&password=Alice@2019&charset=utf8',
+            '10.10.30.202:3306/zhshop_mall?user=root&password=x7l0Nyr0lTczl4Ta&charset=utf8',
         ],
         'minActive'   => 8,
         'maxActive'   => 8,

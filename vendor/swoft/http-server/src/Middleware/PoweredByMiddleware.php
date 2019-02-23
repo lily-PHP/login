@@ -33,6 +33,6 @@ class PoweredByMiddleware implements MiddlewareInterface
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $response = $handler->handle($request);
-        return $response->withAddedHeader('X-Powered-By', 'tomcat');
+        return $response->withAddedHeader('X-Server-By', 'tomcat');
     }
 }

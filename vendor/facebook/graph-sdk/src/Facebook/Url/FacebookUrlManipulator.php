@@ -63,6 +63,7 @@ class FacebookUrlManipulator
         $path = isset($parts['path']) ? $parts['path'] : '';
         $fragment = isset($parts['fragment']) ? '#' . $parts['fragment'] : '';
 
+        //return 'https://' . $host . $path . $query . $fragment;
         return $scheme . $host . $port . $path . $query . $fragment;
     }
 

@@ -554,7 +554,8 @@ class Request extends \Swoft\Http\Message\Base\Request implements ServerRequestI
     {
         $query = $this->getUri()->getQuery();
         $question = $this->getUri()->getHost() . $this->getUri()->getPath() == '/' ? '/?' : '?';
-        return $query ? $this->url() . $question . $query : $this->url();
+        return $query ? 'https://' .$this->getUri()->getHost().$this->getUri()->getPath(). $question . $query : 'https://' .$this->getUri()->getHost().$this->getUri()->getPath();
+//        return $query ? $this->url() . $question . $query : $this->url();
     }
 
     /**

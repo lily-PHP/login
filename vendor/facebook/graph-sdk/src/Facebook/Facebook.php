@@ -183,6 +183,7 @@ class Facebook
         return $this->client;
     }
 
+
     /**
      * Returns the OAuth 2.0 client service.
      *
@@ -195,7 +196,6 @@ class Facebook
             $client = $this->getClient();
             $this->oAuth2Client = new OAuth2Client($app, $client, $this->defaultGraphVersion);
         }
-
         return $this->oAuth2Client;
     }
 

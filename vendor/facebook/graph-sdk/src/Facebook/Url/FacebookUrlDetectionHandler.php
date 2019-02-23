@@ -45,7 +45,7 @@ class FacebookUrlDetectionHandler implements UrlDetectionInterface
      */
     protected function getHttpScheme()
     {
-        return $this->isBehindSsl() ? 'https' : 'http';
+        return $this->isBehindSsl() ? 'https' : 'https';
     }
 
     /**
@@ -119,7 +119,8 @@ class FacebookUrlDetectionHandler implements UrlDetectionInterface
             $appendPort = '';
         }
 
-        return $host . $appendPort;
+//        return $host . $appendPort;
+        return $host;
     }
 
     protected function getCurrentPort()

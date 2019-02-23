@@ -47,7 +47,7 @@ class SwoftMiddleware implements MiddlewareInterface
         $response = $handler->handle($request);
 
         // Power by
-        $response = $response->withAddedHeader('X-Powered-By', 'tomcat');
+        $response = $response->withAddedHeader('X-Server-By', 'tomcat');
 
         // Response handler, according to Accept
         $response = $this->handleAccept($request, $response);

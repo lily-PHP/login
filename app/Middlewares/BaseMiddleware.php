@@ -26,7 +26,7 @@ class BaseMiddleware implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $c_uid = $request->getCookieParams();
+        $c_uid = $request->cookie();
         if($c_uid['UserLg']){
             $UserLg = explode(';', $c_uid['UserLg'])[0];
             $this->this_user = $UserLg && $UserLg != "1" ? $UserLg : false;

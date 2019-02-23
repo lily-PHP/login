@@ -115,9 +115,9 @@ class OAuth2Client
             null,
             $this->graphVersion
         );
+
         $response = $this->client->sendRequest($this->lastRequest);
         $metadata = $response->getDecodedBody();
-
         return new AccessTokenMetadata($metadata);
     }
 

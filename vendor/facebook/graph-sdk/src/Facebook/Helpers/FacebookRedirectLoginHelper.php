@@ -33,6 +33,7 @@ use Facebook\PseudoRandomString\PseudoRandomStringGeneratorInterface;
 use Facebook\Url\FacebookUrlDetectionHandler;
 use Facebook\Url\FacebookUrlManipulator;
 use Facebook\Url\UrlDetectionInterface;
+use Swoft\Http\Message\Server\Request;
 
 /**
  * Class FacebookRedirectLoginHelper
@@ -221,7 +222,7 @@ class FacebookRedirectLoginHelper
         $this->validateCsrf();
         $this->resetCsrf();
 
-        $redirectUrl = $redirectUrl ?: $this->urlDetectionHandler->getCurrentUrl();
+        $redirectUrl = $redirectUrl ? : $this->urlDetectionHandler->getCurrentUrl();
         // At minimum we need to remove the 'code', 'enforce_https' and 'state' params
         $redirectUrl = FacebookUrlManipulator::removeParamsFromUrl($redirectUrl, ['code', 'enforce_https', 'state']);
 
@@ -266,6 +267,7 @@ class FacebookRedirectLoginHelper
      */
     protected function getCode()
     {
+//        return session()->get('fb_code');
         return $this->getInput('code');
     }
 
@@ -328,6 +330,9 @@ class FacebookRedirectLoginHelper
      */
     private function getInput($key)
     {
-        return isset($_GET[$key]) ? $_GET[$key] : null;
+        $fbCode = session()->get('fb_code');
+        return isset($fbCode[$key]) ? $fbCode[$key]:null;
+
+//        return isset($_GET[$key]) ? $_GET[$key] : null;
     }
 }

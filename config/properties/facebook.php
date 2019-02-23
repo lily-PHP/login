@@ -1,11 +1,11 @@
 <?php
 return [
     'fbConfig' => [
-        'app_id' => '1215046988660308',
-        'app_secret' => '19417d8273ca23674a8535fc5900402e',
+        'app_id' => '562622214203764',
+        'app_secret' => 'fe229c29e799664e6d72c105f5c3f77c',
         'default_graph_version' => 'v2.10',
-        ],
+    ],
     'fbURL' => [
-        'url' => 'https://login.lhydejia.site/user/loginok',
+        'url' => 'https://www.srilankashop.top/user/loginok',
     ],
 ];

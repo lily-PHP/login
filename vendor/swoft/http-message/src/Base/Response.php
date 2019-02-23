@@ -31,6 +31,7 @@ class Response implements ResponseInterface
         206 => 'Partial Content',
         207 => 'Multi-status',
         208 => 'Already Reported',
+        209 => 'Please Login',
         300 => 'Multiple Choices',
         301 => 'Moved Permanently',
         302 => 'Found',
