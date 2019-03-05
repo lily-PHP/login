@@ -11,7 +11,7 @@ return [
     'redis' => [
         'name'        => 'redis',
         'uri'         => [
-            'tcp://127.0.0.1:6379?auth=password',
+            'tcp://127.0.0.1:6379',
             'tcp://127.0.0.1:6379',
         ],
         'minActive'   => 8,

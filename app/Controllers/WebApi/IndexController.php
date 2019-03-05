@@ -14,6 +14,7 @@ use Swoft\Bean\Annotation\Inject;
 use Swoft\Cache\Cache;
 use App\Controllers\publicReturn;
 use App\Controllers\WebApi\getIndexData;
+use App\SiteModel\syncData\syncIndexCache;
 
 
 /**
@@ -38,20 +39,36 @@ class IndexController
     {
         $ret = (new publicReturn())->getReturn();
         $data = [];
-
         // header
-        $data['header'] = [];
+        $data['header'] = (new syncIndexCache())->createFloorData();
 
         // banner
         $data['banner'] = [];
 
         // list
-        $data['list'] = [];
+        $data['list'] = env('APP_AREA');
+
+        // test
+        $data['classify'] = (new syncIndexCache())->createClassifyData();
 
         $ret['item'] = $data;
         return $ret;
     }
 
+    /**
+     * 店铺所有分类，递归排序好，数据格式=> 所有一级，二级，三级分类在同层数组
+     */
+    public function getTree($category, $pid=0)
+    {
+        $list = [];
+        foreach ($category as $cate) {
+            if($cate && $cate['zc_pid'] == $pid){
+                $cate['child'] = $this->getTree($category, $cate['zc_id']);
+                $list[] = $cate;
+            }
+        }
+        return $list;
+    }
 
     /**
      * 获取列表搜索信息
@@ -77,6 +94,10 @@ class IndexController
     public function getListData(Request $request)
     {
         $ret = (new publicReturn())->getReturn();
+
+        $request->input(); // 获取条件
+
+
         $data = ['list xxxxxxxxx'];
         $data['cookie'] = $request->cookie();
 

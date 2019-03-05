@@ -28,4 +28,6 @@ return [
     'breaker'      => require __DIR__ . DS . 'breaker.php',
     'provider'     => require __DIR__ . DS . 'provider.php',
     'facebook'     => require __DIR__ . DS . 'facebook.php',
+    'instagram'     => require __DIR__ . DS . 'instagram.php',
+    'google'     => require __DIR__ . DS . 'google.php',
 ];

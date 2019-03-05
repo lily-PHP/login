@@ -15,9 +15,11 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '40725293a2ac2c3dc06eda78738e3ff6' => __DIR__ . '/..' . '/swoft/framework/src/Helper/Functions.php',
         '8e4f694d7da0e33450e63833b9a75993' => __DIR__ . '/..' . '/swoft/http-message/src/Helper/Functions.php',
-        'cc37a1befbed2103104b095911899e94' => __DIR__ . '/..' . '/swoft/console/src/Helper/Functions.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        'cc37a1befbed2103104b095911899e94' => __DIR__ . '/..' . '/swoft/console/src/Helper/Functions.php',
         'c75dc18f90019567f351c574f8e16e7f' => __DIR__ . '/..' . '/swoft/service-governance/src/Helper/Functions.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '0bdbd081a332e921d63969714c2039f5' => __DIR__ . '/..' . '/swoft/process/src/Helper/Functions.php',
         '30ef5a432812e53e35293749d21015ac' => __DIR__ . '/..' . '/swoft/redis/src/Helper/Functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -106,9 +108,11 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
             'PhpCsFixer\\' => 11,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -127,10 +131,13 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         array (
             'GuzzleHttp\\Stream\\' => 18,
             'GuzzleHttp\\Ring\\' => 16,
+            'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\' => 11,
+            'Google\\Auth\\' => 12,
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'Facebook\\' => 9,
         ),
         'D' => 
@@ -355,6 +362,10 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -366,6 +377,10 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         'PhpCsFixer\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Monolog\\' => 
         array (
@@ -391,9 +406,21 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
         ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Google\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/auth/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Facebook\\' => 
         array (
@@ -441,6 +468,17 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
         ),
+        'G' => 
+        array (
+            'Google_Service_' => 
+            array (
+                0 => __DIR__ . '/..' . '/google/apiclient-services/src',
+            ),
+            'Google_' => 
+            array (
+                0 => __DIR__ . '/..' . '/google/apiclient/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 
@@ -458,6 +496,25 @@ class ComposerStaticInit3a86f6e4f03afab751635f72f4502337
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Google_AccessToken_Revoke' => __DIR__ . '/..' . '/google/apiclient/src/Google/AccessToken/Revoke.php',
+        'Google_AccessToken_Verify' => __DIR__ . '/..' . '/google/apiclient/src/Google/AccessToken/Verify.php',
+        'Google_AuthHandler_AuthHandlerFactory' => __DIR__ . '/..' . '/google/apiclient/src/Google/AuthHandler/AuthHandlerFactory.php',
+        'Google_AuthHandler_Guzzle5AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/Google/AuthHandler/Guzzle5AuthHandler.php',
+        'Google_AuthHandler_Guzzle6AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/Google/AuthHandler/Guzzle6AuthHandler.php',
+        'Google_Client' => __DIR__ . '/..' . '/google/apiclient/src/Google/Client.php',
+        'Google_Collection' => __DIR__ . '/..' . '/google/apiclient/src/Google/Collection.php',
+        'Google_Exception' => __DIR__ . '/..' . '/google/apiclient/src/Google/Exception.php',
+        'Google_Http_Batch' => __DIR__ . '/..' . '/google/apiclient/src/Google/Http/Batch.php',
+        'Google_Http_MediaFileUpload' => __DIR__ . '/..' . '/google/apiclient/src/Google/Http/MediaFileUpload.php',
+        'Google_Http_REST' => __DIR__ . '/..' . '/google/apiclient/src/Google/Http/REST.php',
+        'Google_Model' => __DIR__ . '/..' . '/google/apiclient/src/Google/Model.php',
+        'Google_Service' => __DIR__ . '/..' . '/google/apiclient/src/Google/Service.php',
+        'Google_Service_Exception' => __DIR__ . '/..' . '/google/apiclient/src/Google/Service/Exception.php',
+        'Google_Service_Resource' => __DIR__ . '/..' . '/google/apiclient/src/Google/Service/Resource.php',
+        'Google_Task_Exception' => __DIR__ . '/..' . '/google/apiclient/src/Google/Task/Exception.php',
+        'Google_Task_Retryable' => __DIR__ . '/..' . '/google/apiclient/src/Google/Task/Retryable.php',
+        'Google_Task_Runner' => __DIR__ . '/..' . '/google/apiclient/src/Google/Task/Runner.php',
+        'Google_Utils_UriTemplate' => __DIR__ . '/..' . '/google/apiclient/src/Google/Utils/UriTemplate.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/AssertionFailedError.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',

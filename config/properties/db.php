@@ -12,7 +12,8 @@ return [
     'master' => [
         'name'        => 'master',
         'uri'         => [
-            '10.10.30.202:3306/zhshop_mall?user=root&password=x7l0Nyr0lTczl4Ta&charset=utf8',
+//            '10.10.30.202:3306/zhshop_mall?user=root&password=x7l0Nyr0lTczl4Ta&charset=utf8',
+        '47.74.214.40:3306/zhshop_mall?user=root&password=@x7l0Nyr0lTczl4Ta&charset=utf8',
         ],
         'minActive'   => 8,
         'maxActive'   => 8,

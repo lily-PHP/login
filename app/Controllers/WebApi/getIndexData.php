@@ -36,6 +36,15 @@ class getIndexData{
 
 
     /**
+     * 获取分类导航
+     */
+    private function getClassify()
+    {
+        //
+    }
+
+
+    /**
      * 获取headers
      */
     private function getHeaders()
